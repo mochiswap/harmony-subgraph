@@ -36,7 +36,7 @@ export function getEthPriceInUSD(): BigDecimal {
   } else if (usdtPair !== null) {
     return usdtPair.token0Price
   } else {
-    return ZERO_BD
+    return BigDecimal.fromString('1000')
   }
 }
 
